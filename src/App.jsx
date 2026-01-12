@@ -1,34 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// default로 export 하면 값이 하나로 결정되어 있어서
+// import하는 쪽에서 사용하기 편한 이름으로 지정 가능
+import 첫번째 from "./react-study/01-jsx-and-component/App01"
+import 두번째 from "./react-study/01-jsx-and-component/App02"
+import 세번째 from "./react-study/01-jsx-and-component/App03"
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    return (
+      <>
+      {/* App01 호출 */}
+        <첫번째 />
+        <두번째 />
+        <세번째 />
+      </>
   )
 }
 
