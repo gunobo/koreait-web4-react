@@ -8,9 +8,7 @@ import Study from "./react-study/study"
 function App() {
     return (
       <>
-        {/* <Study /> */}
-        {/* <NavBar /> */}
-        <ModalContainer />
+        <Study />
       </>
   )
 }
