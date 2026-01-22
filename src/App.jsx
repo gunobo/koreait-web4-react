@@ -4,10 +4,12 @@ import Modal from "./react-study/02-useState/Modal/Modal"
 import ModalContainer from "./react-study/02-useState/Modal/ModalContainer"
 import NavBar from "./react-study/02-useState/NavBar/NavBar"
 import Study from "./react-study/study"
+import MyToast from "./react-study/Zustand/MyToast"
 
 function App() {
     return (
       <>
+        <MyToast />
         <Study />
       </>
   )
