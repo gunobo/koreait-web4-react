@@ -22,3 +22,32 @@ export const useCurrentBook = create((set) => {
     // 일부만 업데이트 가능할까?
   }
 })
+
+export const useBookList = create((set) => {
+  return {
+    // R
+    books: [{
+      id: 1,
+      title: "자바의정석",
+      author: "남궁성",
+      price: "30000"
+    }],
+
+    // C - add
+    addBook: (newBook) => set((prev) => ({
+      books: [...prev.books, { ...newBook, id: Date.now() }]
+    })),
+
+    // U - update
+    updateBook: (id, newPrice) => set((prev) => ({
+      books: prev.books.map((b) => 
+        b.id === id ? { ...b, price: newPrice } : b
+      )
+    })),
+    
+    // D - remove
+    removeBook: (id) => set((prev) => ({
+      books: prev.books.filter((b) => b.id !== id)
+    }))
+  }
+})
