@@ -13,6 +13,9 @@ import MyToast from "./Zustand/MyToast";
 import Zustand02 from "./Zustand/Zustand02";
 import Zustand03 from "./Zustand/Zustand03";
 import Zustand04 from "./Zustand/Zustand04";
+import Axios01 from "./Axios/Axios01";
+import Axios02 from "./Axios/Axios02";
+import Axios03 from "./Axios/Axios03";
 
 export default function Study() {
     const stateStudy = {
@@ -29,7 +32,10 @@ export default function Study() {
         11: <Zustand02 />,
         12: <Zustand03 />,
         13: <Zustand04 />,
+        14: <Axios01 />,
+        15: <Axios02 />,
+        16: <Axios03 />,
     };
 
-    return stateStudy[13];
-}
+    return stateStudy[16];
+}   
